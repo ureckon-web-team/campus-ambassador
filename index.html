@@ -559,38 +559,38 @@ a.socialIcon:hover, .socialHoverClass {
                     <form>
                         <div class="form-group">
                             <label class="form-label" for="identityName">Name</label>
-                            <input type="text" class="form-control" id="identityName">
+                            <input type="text" class="form-control" id="identityName" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="inputEmail">Email Address</label>
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input type="email" class="form-control" id="inputEmail" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" for="mobileNum">Mobile Number</label>
-                            <input type="text" class="form-control" id="mobileNum">
+                            <input type="text" class="form-control" id="mobileNum" pattern="^\d{10}$" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" for="address">Address</label>
-                            <input type="text" class="form-control" id="address">
+                            <input type="text" class="form-control" id="address" required>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" for="colgName">College/University/Institution Name</label>
-                            <input type="text" class="form-control" id="colgName">
+                            <input type="text" class="form-control" id="colgName" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="colgCity">City</label>
-                            <input type="text" class="form-control" id="colgCity">
+                            <input type="text" class="form-control" id="colgCity" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="colgStrentg">Total Student Strength of your Institution(approx)</label>
-                            <input type="text" class="form-control" id="colgStrentg">
+                            <input type="text" class="form-control" id="colgStrentg" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="studyCourse">Course of Study</label>
-                            <select class="form-control" id="studyCourse">
+                            <select class="form-control" id="studyCourse" required>
                                 <option>B.Tech/B.E.</option>
                                 <option>M.Tech/M.E.</option>
                                 <option>BCA</option>
@@ -606,11 +606,11 @@ a.socialIcon:hover, .socialHoverClass {
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="dept">Department</label>
-                            <input type="text" class="form-control" id="dept">
+                            <input type="text" class="form-control" id="dept" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="yos">Year Of Study</label>
-                            <select class="form-control" id="yos">
+                            <select class="form-control" id="yos" required>
                                 <option>1st year</option>
                                 <option>2nd year</option>
                                 <option>3nd year</option>
@@ -621,19 +621,19 @@ a.socialIcon:hover, .socialHoverClass {
                         <div class="form-group">
                             <label class="form-label" for="cop">Contact Point - Gen. Secretary/President/Head Student Authority of
                                 Student Body</label>
-                            <textarea type="text" rows="2" class="form-control" id="cop"></textarea>
+                            <textarea type="text" rows="2" class="form-control" id="cop" required></textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="porh">Positions of Responsibility Held</label>
-                            <textarea type="text" rows="2" class="form-control" id="porh"></textarea>
+                            <textarea type="text" rows="2" class="form-control" id="porh" required></textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="whyHro">Why Do You Want to join as Ureckon Campus Ambassador?</label>
-                            <textarea type="text" rows="4" class="form-control" id="whyHro"></textarea>
+                            <textarea type="text" rows="4" class="form-control" id="whyHro" required></textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="knoUCHP">How did you came to know about Ureckon Campus Ambassador Program?</label>
-                            <select class="form-control" id="knoUCHP">
+                            <select class="form-control" id="knoUCHP" required>
                                 <option>Ureckon Official FB Page</option>
                                 <option>Ureckon Official Website</option>
                                 <option>Ureckon Representatives</option>
@@ -641,9 +641,9 @@ a.socialIcon:hover, .socialHoverClass {
                                 <option>Other</option>
                             </select>
                         </div>
+			<br>
+                    	<button type="submit" class="btn btn-register btn-lg btn-block" onclick="register()">Register!</button>
                     </form>
-                    <br>
-                    <button type="submit" class="btn btn-register btn-lg btn-block" onclick="register()">Register!</button>
                 </div>
             </div>
         </div>
